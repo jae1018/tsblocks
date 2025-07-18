@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsblocks"
+version = "0.1.0"
+description = "A modular time series preprocessing library for building sequence windows, multi-scale statistical features, and PyTorch datasets."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [
+    {name="James Edmond", email="edmondandy795@gmail.com"}
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "xarray"
+    "tqdm"
+]
+
+#[project.urls]
+#"Homepage" = "https://github.com/yourname/tsblocks"
+
+[tool.setuptools.packages.find]
+where = ["src"]
