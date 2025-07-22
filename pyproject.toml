@@ -16,7 +16,8 @@ dependencies = [
     "numpy",
     "pandas",
     "xarray",
-    "tqdm"
+    "tqdm",
+    "netcdf4"
 ]
 
 #[project.urls]
